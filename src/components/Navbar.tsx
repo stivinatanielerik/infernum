@@ -1,35 +1,48 @@
+import { Link } from 'react-router-dom'
+
 function Navbar() {
   return (
     <header className="fixed left-0 top-0 z-50 w-full border-b border-white/10 bg-black/80 backdrop-blur-md">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
-        <a
-          href="#"
+        <Link
+          to="/"
           className="text-xl font-black tracking-[0.25em]"
         >
           INFERNUM
-        </a>
+        </Link>
 
         <nav className="hidden gap-8 text-sm font-bold tracking-wide text-white/60 md:flex">
-          <a
-            href="#rave"
+          <Link
+            to="/hardtekk"
             className="transition hover:text-white"
           >
-            RAVE
-          </a>
+            HARDTEKK
+          </Link>
 
-          <a
-            href="#bochka"
+          <Link
+            to="/hardcore"
+            className="transition hover:text-white"
+          >
+            HARDCORE
+          </Link>
+          <Link
+            to="/industrial"
+            className="transition hover:text-white"
+          >
+            INDUSTRIAL
+          </Link>
+          <Link
+            to="/bochka"
             className="transition hover:text-white"
           >
             BOCHKA
-          </a>
-
-          <a
-            href="#rankings"
+          </Link>
+          <Link
+            to="/hardstyle"
             className="transition hover:text-white"
           >
-            TOPLISTA
-          </a>
+            HARDSTYLE
+          </Link>
         </nav>
       </div>
     </header>
