@@ -18,7 +18,7 @@ function Home() {
             <br />
             UNDERGROUND
             <br />
-            CULTURE
+            COMMUNITY & CULTURE
           </h1>
 
           <p className="mt-10 max-w-2xl text-lg leading-8 text-white/50 md:text-xl">

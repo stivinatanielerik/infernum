@@ -12,36 +12,12 @@ function Navbar() {
         </Link>
 
         <nav className="hidden gap-8 text-sm font-bold tracking-wide text-white/60 md:flex">
-          <Link
-            to="/hardtekk"
-            className="transition hover:text-white"
-          >
-            HARDTEKK
-          </Link>
 
           <Link
-            to="/hardcore"
+            to="/genres"
             className="transition hover:text-white"
           >
-            HARDCORE
-          </Link>
-          <Link
-            to="/industrial"
-            className="transition hover:text-white"
-          >
-            INDUSTRIAL
-          </Link>
-          <Link
-            to="/bochka"
-            className="transition hover:text-white"
-          >
-            BOCHKA
-          </Link>
-          <Link
-            to="/hardstyle"
-            className="transition hover:text-white"
-          >
-            HARDSTYLE
+            ZENEI MŰFAJOK
           </Link>
         </nav>
       </div>

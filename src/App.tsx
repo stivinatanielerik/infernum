@@ -17,7 +17,7 @@ import { frenchcore } from './data/genres/frenchcore'
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/infernum">
       <div className="min-h-screen bg-black text-white">
         <Navbar />
 
