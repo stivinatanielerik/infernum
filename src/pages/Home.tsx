@@ -9,22 +9,18 @@ function Home() {
       <section className="flex min-h-screen items-center px-6">
         <div className="mx-auto w-full max-w-6xl">
 
-          <p className="mb-6 text-sm font-bold tracking-[0.4em] text-red-500">
+          <p className="mt-6 mb-6 text-sm font-bold tracking-[0.4em] text-red-500">
             HUNGARIAN UNDERGROUND
           </p>
 
           <h1 className="max-w-5xl text-6xl font-black uppercase leading-[0.9] tracking-tight md:text-8xl">
-            RAVE
-            <br />
-            UNDERGROUND
+            UNDERGROUND RAVE
             <br />
             COMMUNITY & CULTURE
           </h1>
 
           <p className="mt-10 max-w-2xl text-lg leading-8 text-white/50 md:text-xl">
-            Az Infernum a magyar underground elektronikus zenei
-            kultúra felfedezésére és közösségi építésére létrehozott
-            platform.
+            Az Infernum egy magyar (leginkább budapest központú) underground elektronikus zenei bulisorozat, közösség és egyben platform is.
           </p>
 
           <div className="mt-10 flex flex-wrap gap-4">
@@ -35,11 +31,18 @@ function Home() {
               MI AZ A RAVE?
             </Link>
 
+            <Link
+              to="/rave"
+              className="rounded-full bg-white px-6 py-3 text-sm font-bold text-black transition hover:bg-white/80"
+            >
+              CÉLUNK
+            </Link>
+
             <a
               href="#rankings"
               className="rounded-full border border-white/20 px-6 py-3 text-sm font-bold transition hover:border-white/50"
             >
-              RANKINGEK
+              RANGLISTÁK
             </a>
           </div>
 
@@ -69,30 +72,6 @@ function Home() {
         </div>
       </section>
 
-
-      {/* BOCHKA */}
-      <section className="border-t border-white/10 px-6 py-28">
-        <div className="mx-auto max-w-6xl">
-
-          <SectionHeading
-            number="02"
-            title="Bochka"
-            description="Egy magyar underground közegben használt elnevezés egy jellegzetes, kemény elektronikus hangzásra."
-          />
-
-          <div className="mt-12">
-            <Link
-              to="/bochka"
-              className="inline-block text-sm font-bold text-red-500 transition hover:text-red-400"
-            >
-              FEDEZD FEL →
-            </Link>
-          </div>
-
-        </div>
-      </section>
-
-
       {/* RANKINGS */}
       <section
         id="rankings"
@@ -101,8 +80,8 @@ function Home() {
         <div className="mx-auto max-w-6xl">
 
           <SectionHeading
-            number="03"
-            title="Rankingek"
+            number="02"
+            title="Toplisták"
             description="A közösség szavazatai alapján összeállított listák DJ-kről, rave helyszínekről és party sorozatokról."
           />
 
@@ -119,8 +98,8 @@ function Home() {
             />
 
             <RankingPreview
-              title="Party sorozatok"
-              description="Ismerd meg a meghatározó party sorozatokat."
+              title="Csapatok"
+              description="Ismerd meg a meghatározó bulisorozatokat."
             />
 
           </div>
@@ -134,7 +113,7 @@ function Home() {
   <div className="mx-auto max-w-6xl">
 
     <SectionHeading
-      number="04"
+      number="03"
       title="Zenei világ"
       description="Fedezd fel az underground elektronikus zene különböző irányzatait."
     />
