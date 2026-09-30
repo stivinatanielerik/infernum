@@ -1,5 +1,4 @@
 import SectionHeading from '../components/SectionHeading'
-import type { ReactNode } from 'react'
 
 function Rave() {
   return (
