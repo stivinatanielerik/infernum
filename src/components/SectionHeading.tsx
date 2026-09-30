@@ -1,7 +1,7 @@
 type SectionHeadingProps = {
   number: string
   title: string
-  description?: string
+  description?: React.ReactNode
 }
 
 function SectionHeading({

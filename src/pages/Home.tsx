@@ -9,17 +9,29 @@ function Home() {
       <section className="flex min-h-screen items-center px-6">
         <div className="mx-auto w-full max-w-6xl">
 
-          <p className="mt-6 mb-6 text-sm font-bold tracking-[0.4em] text-red-500">
-            HUNGARIAN UNDERGROUND
+          <p className="mt-6 mb-4 flex text-sm font-bold tracking-[0.4em] text-red-500">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 3 2"
+              className="h-4 w-6 shrink-0 mr-2"
+              aria-label="Hungarian flag"
+            >
+              <rect width="3" height="2" fill="#fff" />
+              <rect width="3" height="2" y="0" fill="#ce2939" />
+              <rect width="3" height="0.6667" y="0.6667" fill="#fff" />
+              <rect width="3" height="0.6667" y="1.3333" fill="#477050" />
+            </svg>
+            Magyar/Hungarian
           </p>
 
           <h1 className="max-w-5xl text-6xl font-black uppercase leading-[0.9] tracking-tight md:text-8xl">
-            UNDERGROUND RAVE
+            UNDERGROUND 
             <br />
-            COMMUNITY & CULTURE
+            RAVE & COMMUNITY
+            <br />
           </h1>
-
-          <p className="mt-10 max-w-2xl text-lg leading-8 text-white/50 md:text-xl">
+          <h2 className="mt-4 md:text-4xl">(+ LIFESTYLE AND SUBCULTURE)</h2>
+          <p className="mt-4 max-w-2xl text-lg leading-8 text-white/50 md:text-xl">
             Az Infernum egy magyar (leginkább budapest központú) underground elektronikus zenei bulisorozat, közösség és egyben platform is.
           </p>
 
@@ -28,7 +40,14 @@ function Home() {
               to="/rave"
               className="rounded-full bg-white px-6 py-3 text-sm font-bold text-black transition hover:bg-white/80"
             >
-              MI AZ A RAVE?
+              MI AZ A RAVE
+            </Link>
+
+            <Link
+              to="/rave"
+              className="rounded-full bg-white px-6 py-3 text-sm font-bold text-black transition hover:bg-white/80"
+            >
+              KIK VAGYUNK MI
             </Link>
 
             <Link
@@ -42,7 +61,7 @@ function Home() {
               href="#rankings"
               className="rounded-full border border-white/20 px-6 py-3 text-sm font-bold transition hover:border-white/50"
             >
-              RANGLISTÁK
+             SZAVAZZ TE IS
             </a>
           </div>
 
@@ -72,7 +91,7 @@ function Home() {
         </div>
       </section>
 
-      {/* RANKINGS */}
+      {/* TOPLISTS */}
       <section
         id="rankings"
         className="border-t border-white/10 px-6 py-28"
@@ -82,19 +101,19 @@ function Home() {
           <SectionHeading
             number="02"
             title="Toplisták"
-            description="A közösség szavazatai alapján összeállított listák DJ-kről, rave helyszínekről és party sorozatokról."
+            description="A közösség szavazatai alapján összeállított rangsor (szavazáshoz be kell jelentkezni):"
           />
 
           <div className="mt-12 grid gap-6 md:grid-cols-3">
 
             <RankingPreview
-              title="DJ-k"
-              description="Szavazz a kedvenc underground DJ-idre."
+              title="Zenei műfaj"
+              description="Szavazz a kedvenc zenei alműfajodra!"
             />
 
             <RankingPreview
               title="Helyszínek"
-              description="Fedezd fel a közösség által értékelt rave helyszíneket."
+              description="Melyik számodra a legkedveltebb rave helyszín?"
             />
 
             <RankingPreview

@@ -1,4 +1,5 @@
 import SectionHeading from '../components/SectionHeading'
+import type { ReactNode } from 'react'
 
 function Rave() {
   return (
@@ -7,7 +8,12 @@ function Rave() {
         <SectionHeading
           number="01"
           title="Mi az a rave?"
-          description="A rave nem csupán egy zenei műfaj, hanem egy kulturális jelenség, amelynek középpontjában az elektronikus zene, a közösségi élmény és a tánc áll."
+          description={<>A rave kifejezés leggyakrabban egy elektronikus zenei eseményt jelent, 
+            amely szokatlan helyszíneken – például raktárakban, elhagyatott épületekben vagy a szabad ég alatt – zajlik, és 
+            egész éjszakás táncolásból áll. <br /><br />A rave egy különálló zenei műfajt is jelent, 
+            azonban mi egy kulturális jelenségre hivatkozunk, 
+            amelynek középpontjában legtöbbször a techno és hasonló műfajok állnak, a közösségi élmény, 
+            a szabadság érzete és valamilyen szinten a lázadás jelképeként.</>}
         />
 
         <div className="mt-16 grid gap-12 md:grid-cols-2">
