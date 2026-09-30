@@ -1,4 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Toplista from './pages/Toplist'
+import { AuthProvider } from './context/AuthContext'
+import Bejelentkezes from './pages/Bejelentkezes'
 
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
@@ -17,54 +20,66 @@ import { frenchcore } from './data/genres/frenchcore'
 
 function App() {
   return (
-    <BrowserRouter basename="/infernum">
-      <div className="min-h-screen bg-black text-white">
-        <Navbar />
+    <AuthProvider>
+      <BrowserRouter basename="/infernum">
+        <div className="min-h-screen bg-black text-white">
+          <Navbar />
 
-        <Routes>
-          <Route path="/" element={<Home />} />
+          <Routes>
+            <Route path="/" element={<Home />} />
 
-          <Route path="/rave" element={<Rave />} />
+            <Route path="/rave" element={<Rave />} />
 
-          <Route
-            path="/bochka"
-            element={<GenrePage genre={bochka} />}
-          />
+            <Route
+              path="/bejelentkezes"
+              element={<Bejelentkezes />}
+            />
 
-          <Route
-            path="/hardtekk"
-            element={<GenrePage genre={hardtekk} />}
-          />
+            <Route
+              path="/bochka"
+              element={<GenrePage genre={bochka} />}
+            />
 
-          <Route
-            path="/hardcore"
-            element={<GenrePage genre={hardcore} />}
-          />
+            <Route
+              path="/hardtekk"
+              element={<GenrePage genre={hardtekk} />}
+            />
 
-          <Route
-            path="/hardstyle"
-            element={<GenrePage genre={hardstyle} />}
-          />
+            <Route
+              path="/hardcore"
+              element={<GenrePage genre={hardcore} />}
+            />
 
-          <Route
-            path="/industrial"
-            element={<GenrePage genre={industrial} />}
-          />
+            <Route
+              path="/hardstyle"
+              element={<GenrePage genre={hardstyle} />}
+            />
 
-          <Route
-            path="/hardtechno"
-            element={<GenrePage genre={hardtechno} />}
-          />
+            <Route
+              path="/industrial"
+              element={<GenrePage genre={industrial} />}
+            />
 
-          <Route
-            path="/frenchcore"
-            element={<GenrePage genre={frenchcore} />}
-          />
-        </Routes>
+            <Route
+              path="/hardtechno"
+              element={<GenrePage genre={hardtechno} />}
+            />
 
-        <Footer />
-      </div>
-    </BrowserRouter>
+            <Route
+              path="/frenchcore"
+              element={<GenrePage genre={frenchcore} />}
+            />
+
+            <Route
+              path="/toplista"
+              element={<Toplista />}
+            />
+          </Routes>
+
+          <Footer />
+        </div>
+      </BrowserRouter>
+    </AuthProvider>
   )
 }
 
