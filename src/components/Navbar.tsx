@@ -54,6 +54,13 @@ function Navbar() {
           </Link>
 
           <Link
+            to="/dj"
+            className="transition hover:text-white"
+          >
+            DJ PROFILOK
+          </Link>
+
+          <Link
             to="/bejelentkezes"
             className="rounded-full border border-white/20 px-5 py-2 text-white transition hover:border-white/50"
           >

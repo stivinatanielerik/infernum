@@ -31,6 +31,7 @@ function Home() {
             <br />
           </h1>
           <h2 className="mt-4 md:text-4xl">(+ LIFESTYLE AND SUBCULTURE)</h2>
+          <h3 className="mt-4 md:text-2xl">és minden ami EDM vagy techno</h3>
           <p className="mt-4 max-w-2xl text-lg leading-8 text-white/50 md:text-xl">
             Az Infernum egy magyar (leginkább budapest központú) underground elektronikus zenei bulisorozat, közösség és egyben platform is.
           </p>
@@ -68,7 +69,6 @@ function Home() {
         </div>
       </section>
 
-
       {/* RAVE */}
       <section className="border-t border-white/10 px-6 py-28">
         <div className="mx-auto max-w-6xl">
@@ -91,6 +91,17 @@ function Home() {
         </div>
       </section>
 
+      {/* EVENTEK */}
+      <section className="border-t border-white/10 px-6 py-28">
+        <div className="mx-auto max-w-6xl">
+          <SectionHeading
+              number="02"
+              title="Saját szervezésű bulijaink"
+              description="Gyere el és éld át az Infernum rave világát"
+            />
+        </div>
+      </section>
+
       {/* TOPLISTS */}
       <section
         id="rankings"
@@ -99,7 +110,7 @@ function Home() {
         <div className="mx-auto max-w-6xl">
 
           <SectionHeading
-            number="02"
+            number="03"
             title="Toplisták"
             description="A közösség szavazatai alapján összeállított rangsor (szavazáshoz be kell jelentkezni):"
           />
@@ -126,65 +137,75 @@ function Home() {
         </div>
       </section>
 
+      {/* DJ PROFILOK */}
+      <section className="border-t border-white/10 px-6 py-28">
+        <div className="mx-auto max-w-6xl">
+          <SectionHeading
+              number="04"
+              title="Dj-k, producerek artist profiljai"
+              description="Ismerd meg jobban kedvenc fellépőidet"
+            />
+        </div>
+      </section>
 
       {/* ZENEI VILÁG */}
-<section className="border-t border-white/10 px-6 py-28">
-  <div className="mx-auto max-w-6xl">
+      <section className="border-t border-white/10 px-6 py-28">
+        <div className="mx-auto max-w-6xl">
 
-    <SectionHeading
-      number="03"
-      title="Zenei világ"
-      description="Fedezd fel az underground elektronikus zene különböző irányzatait."
-    />
+          <SectionHeading
+            number="05"
+            title="Zenei világ"
+            description="Fedezd fel az underground elektronikus zene különböző irányzatait."
+          />
 
-    <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
 
-      <GenrePreview
-        name="Bochka"
-        description="Magyar underground közegben használt kemény elektronikus hangzás."
-        to="/bochka"
-      />
+            <GenrePreview
+              name="Bochka"
+              description="Magyar underground közegben használt kemény elektronikus hangzás."
+              to="/bochka"
+            />
 
-      <GenrePreview
-        name="Hardtekk"
-        description="Gyors, kemény és groove-központú elektronikus zenei irányzat."
-        to="/hardtekk"
-      />
+            <GenrePreview
+              name="Hardtekk"
+              description="Gyors, kemény és groove-központú elektronikus zenei irányzat."
+              to="/hardtekk"
+            />
 
-      <GenrePreview
-        name="Hardcore"
-        description="Gyors, intenzív és erőteljes elektronikus zenei irányzat."
-        to="/hardcore"
-      />
+            <GenrePreview
+              name="Hardcore"
+              description="Gyors, intenzív és erőteljes elektronikus zenei irányzat."
+              to="/hardcore"
+            />
 
-      <GenrePreview
-        name="Hardstyle"
-        description="Erőteljes kickek, dallamok és nagy energiájú hangzás."
-        to="/hardstyle"
-      />
+            <GenrePreview
+              name="Hardstyle"
+              description="Erőteljes kickek, dallamok és nagy energiájú hangzás."
+              to="/hardstyle"
+            />
 
-      <GenrePreview
-        name="Industrial"
-        description="Sötét, nyers és kísérletező hangzás az undergroundból."
-        to="/industrial"
-      />
+            <GenrePreview
+              name="Industrial"
+              description="Sötét, nyers és kísérletező hangzás az undergroundból."
+              to="/industrial"
+            />
 
-      <GenrePreview
-        name="Hard Techno"
-        description="Kemény, sötét és intenzív techno erőteljes kickekkel és gyors tempóval."
-        to="/hardtechno"
-      />
+            <GenrePreview
+              name="Hard Techno"
+              description="Kemény, sötét és intenzív techno erőteljes kickekkel és gyors tempóval."
+              to="/hardtechno"
+            />
 
-      <GenrePreview
-        name="Frenchcore"
-        description="Gyors hardcore irányzat erőteljes kickekkel, energikus ritmusokkal és francia underground gyökerekkel."
-        to="/frenchcore"
-      />
+            <GenrePreview
+              name="Frenchcore"
+              description="Gyors hardcore irányzat erőteljes kickekkel, energikus ritmusokkal és francia underground gyökerekkel."
+              to="/frenchcore"
+            />
 
-    </div>
+          </div>
 
-  </div>
-</section>
+        </div>
+      </section>
 
     </main>
   )
